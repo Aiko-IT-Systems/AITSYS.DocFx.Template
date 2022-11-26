@@ -6,7 +6,7 @@
 ignore-vcs = true
 ignore-files = true
 ignore-dot = true
-extend-exclude = ["docs/dcs/src/*","docs/dcs/partials/*","docs/_site/*"]
+extend-exclude = ["docs/dcs/*","docs/_site/*"]
 
 [default]
 locale = "en-us"
