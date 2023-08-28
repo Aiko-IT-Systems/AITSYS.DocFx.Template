@@ -67,36 +67,58 @@
 		"globalMetadata":{
 			"_appTitle": "Docs",
 			"_appName": "Awesome Lib",
-			"_appFooter": "<strong>Made with ♥ by AITSYS</strong>",
-			"_copyrightFooter": "© Aiko IT Systems. All rights reserved.",
-			"_enableSearch":true,
+			"_appFooter": "<strong>Made with ❤️ by AITSYS</strong>",
+			"_appLogoPath": "logo.svg",
+			"_enableSearch": true,
+			"_disableNextArticle": false,
 			"_disableSideFilter": false,
-			"_enableNewTab":true,
+			"_disableTocFilter": false,
+			"_disableNewTab": false,
 			"_disableContribution": false,
 			"_disableBreadcrumb": false,
-			"_gitUrlPattern":"git",
+			"_gitUrlPattern": "git",
 			"_gitContribute":{
 				"repo":"https://github.com/Aiko-IT-Systems/AITSYS.DocFx.Template",
 				"branch":"main"
-			}
+			},
+			"_googleTagId": "G-8JHG7YVNKK",
+			"_lang": "en-US",
+			"_ogType": "website",
+			"_ogImage": "/dcs-docs-embeds-logo.png",
+			"_fbPageId": "112155734832129",
+			"_twitterSite": "@DisCatSharp",
+			"_twitterImage": "/dcs-docs-embeds-logo.png",
+			"_layout": "conceptual",
+			"_urlNormalizationActive": true,
+			"_providerName": "AITSYS DocFx",
+			"_providerUrl": "https://github.com/Aiko-IT-Systems/docfx",
+			"description": "Your library to write discord bots in C# with focus on always providing access to the latest discord features."
 		},
 		"disableGitFeatures":false,
 		"exportRawModel":false,
 		"exportViewModel": false,
 		"globalMetadataFiles":[],
 		"fileMetadataFiles":[],
+		"fileMetadata": {
+			"_ogType": {
+				"articles/**/*.md": "article",
+				"changelogs/**/*.md": "article",
+				"natives/**/*.md": "article",
+				"vs/**/*.md": "article"
+			}
+		},
 		"template":[
 			"default",
+			"modern",
 			"dcs"
 		],
 		"postProcessors":[
 			"ExtractSearchIndex",
-			"CustomMemberIndexer",
-			"DescriptionPostProcessor"
+			"DescriptionGenerator",
+			"LastModified"
 		],
 		"noLangKeyword":false,
-		"keepFileLink":false,
-		"cleanupCacheHistory":false,
+		"keepFileLink":true,
 		"sitemap":{
 			"baseUrl":"https://docs.aitsys.dev/",
 			"changefreq":"daily",
